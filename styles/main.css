@@ -472,12 +472,13 @@ p {
     text-align: center;
     font-family: Poppins, sans-serif;
     font-weight: 600; }
-  .item__text {
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 150%;
-    color: #6c788b;
-    text-align: left; }
+
+.list__item {
+  list-style: none;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 150%;
+  color: #6c788b; }
 
 .more {
   display: -webkit-box;
@@ -496,7 +497,7 @@ p {
     height: 40px;
     border-radius: 50%;
     background-color: #2060f6;
-    background-image: url(/images/arrow.svg);
+    background-image: url(../images/arrow.svg);
     background-repeat: no-repeat;
     background-position: center;
     outline: none;
@@ -697,65 +698,73 @@ p {
   -ms-flex-preferred-size: 314px;
       flex-basis: 314px;
   padding: 32px; }
-  .card__image__wrapper {
-    position: relative;
-    margin: auto;
-    z-index: 1; }
-  .card__decor_1 {
-    width: 139px;
-    height: 56px;
-    background-color: #2060f6;
-    border-radius: 12px;
-    -webkit-transform: rotate(-60deg);
-            transform: rotate(-60deg);
-    position: absolute;
-    top: 50px;
-    left: 10px;
-    z-index: -1; }
-  .card__decor_2 {
-    width: 139px;
-    height: 56px;
-    background-color: #2060f6;
-    border-radius: 12px;
-    -webkit-transform: rotate(-60deg);
-            transform: rotate(-60deg);
-    position: absolute;
-    top: 141px;
-    right: 6px;
-    z-index: -1; }
-  .card__img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    margin-bottom: 82px;
-    margin-top: 55px; }
-  .card__quotes {
-    color: #2060f6;
-    position: relative;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    margin-bottom: 11px; }
-  .card__text {
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 150%;
-    color: #6c788b;
-    margin-bottom: 16px;
-    position: relative; }
-  .card__person {
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 150%;
-    color: #253757;
-    margin-bottom: 4px; }
-  .card__post {
-    font-family: Poppins, sans-serif;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 19px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #c0cdd7; }
+
+.person__wrapper {
+  position: relative;
+  margin: auto;
+  z-index: 1; }
+
+.person__decor_left {
+  width: 139px;
+  height: 56px;
+  background-color: #2060f6;
+  border-radius: 12px;
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  z-index: -1; }
+
+.person__decor_right {
+  width: 139px;
+  height: 56px;
+  background-color: #2060f6;
+  border-radius: 12px;
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+  position: absolute;
+  top: 141px;
+  right: 6px;
+  z-index: -1; }
+
+.person__photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-bottom: 82px;
+  margin-top: 55px; }
+
+.person__quotes {
+  color: #2060f6;
+  position: relative;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-bottom: 11px; }
+
+.person__text {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 150%;
+  color: #6c788b;
+  margin-bottom: 16px;
+  position: relative; }
+
+.person__name {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 150%;
+  color: #253757;
+  margin-bottom: 4px; }
+
+.person__post {
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c0cdd7; }
 
 @media screen and (max-width: 1050px) {
   .testimonials {
@@ -843,10 +852,10 @@ p {
     border-radius: 12px;
     -webkit-transform: rotate(-65.1deg);
             transform: rotate(-65.1deg); }
-    .rect__large__1 {
+    .rect__large_1 {
       top: 28%;
       right: 10%; }
-    .rect__large__2 {
+    .rect__large_2 {
       top: 50%;
       left: 17%; }
   .rect__xbig {
@@ -874,10 +883,10 @@ p {
     border-radius: 12px;
     -webkit-transform: rotate(-65.1deg);
             transform: rotate(-65.1deg); }
-    .rect__xmedium__1 {
+    .rect__xmedium_1 {
       right: 12%;
       bottom: 36%; }
-    .rect__xmedium__2 {
+    .rect__xmedium_2 {
       top: 15%;
       left: 10%; }
   .rect__medium {
@@ -905,13 +914,13 @@ p {
     border-radius: 6px;
     -webkit-transform: rotate(-65.1deg);
             transform: rotate(-65.1deg); }
-    .rect__xsmall__1 {
+    .rect__xsmall_1 {
       right: 37%;
       bottom: 18%; }
-    .rect__xsmall__2 {
+    .rect__xsmall_2 {
       bottom: 26%;
       left: 30%; }
-    .rect__xsmall__3 {
+    .rect__xsmall_3 {
       top: 10%;
       left: 28%; }
 
