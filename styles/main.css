@@ -16,6 +16,7 @@ p {
   padding: 0; }
 
 .header {
+  width: 100%;
   background: #2c2c2c;
   height: 800px;
   margin: auto;
@@ -265,10 +266,12 @@ p {
     margin-bottom: 5px; }
 
 .menu {
-  display: none; }
+  display: none;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content; }
   .menu__list {
     display: none;
-    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -338,6 +341,10 @@ p {
   .menu {
     display: block;
     opacity: 1; } }
+
+@media screen and (max-width: 350px) {
+  .menu__list {
+    height: 100%; } }
 
 .slider__controls {
   height: 32px;
@@ -662,9 +669,9 @@ p {
   color: #fff;
   border-radius: 30px 0 0 30px;
   right: 0;
-  margin: -88px 0 0 8%; }
+  margin: -88px 0 0 8%;
+  position: relative; }
   .approach__wrapper {
-    position: relative;
     width: 90%;
     max-width: 1280px;
     padding: 204px; }
@@ -740,21 +747,38 @@ p {
   .approach {
     margin: 0; }
     .approach__wrapper {
-      padding: 70px; }
+      padding: 50px; }
     .approach__block {
-      width: 100%; }
-    .approach__picture {
-      display: none; }
+      width: 60%; }
   .features__item {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    margin-bottom: 30px; }
   .features__text {
-    width: 90%; } }
+    width: 90%; }
+  .features__picture {
+    margin: 20px 0; } }
+
+@media screen and (min-width: 1900px) {
+  .approach__wrapper {
+    margin: 0 auto;
+    position: relative; } }
+
+@media screen and (max-width: 920px) {
+  .approach__wrapper {
+    width: 100%; }
+  .approach__block {
+    width: 100%; }
+  .approach__picture {
+    display: none; }
+  .features__text {
+    width: 100%;
+    text-align: center; } }
 
 @media screen and (max-width: 850px) {
   .approach__wrapper {
-    padding: 10% 5%; }
+    padding: 5%; }
   .approach__heading {
     font-size: 28px; }
   .approach__subheading {
@@ -762,7 +786,6 @@ p {
 
 @media screen and (max-width: 700px) {
   .approach {
-    margin: 0;
     width: 100%;
     border-radius: 30px; }
     .approach__heading {
@@ -770,16 +793,11 @@ p {
       text-align: center; }
     .approach__subheading {
       text-align: center; }
-  .features__picture {
-    margin: 20px; }
   .features__item:nth-child(n) {
     text-align: center;
     margin: 0;
     -ms-flex-line-pack: start;
         align-content: flex-start; } }
-
-@media screen and (min-width: 1280px) {
-  margin: 0 auto; }
 
 .testimonials {
   padding: 148px 0 168px; }
@@ -1112,7 +1130,7 @@ p {
     font-weight: 600;
     color: #fff; }
     .footer-form__input:focus {
-      outline: 4px outset rgba(32, 96, 246, 0.5);
+      outline: none;
       color: #fff;
       border-bottom-color: #144ed5; }
     .footer-form__input::-webkit-input-placeholder {
@@ -1173,9 +1191,9 @@ p {
       -webkit-box-shadow: 0 0 10px rgba(0, 4, 14, 0.9);
               box-shadow: 0 0 10px rgba(0, 4, 14, 0.9); }
     .footer__button:focus {
-      outline: 4px outset rgba(32, 96, 246, 0.5); }
+      outline: 2px outset rgba(32, 96, 246, 0.5); }
   .footer__logo:focus {
-    outline: 4px outset rgba(32, 96, 246, 0.5); }
+    outline: 2px outset rgba(32, 96, 246, 0.5); }
   .footer__contact {
     font-family: Poppins, sans-serif;
     font-weight: bold;
@@ -1196,7 +1214,7 @@ p {
     .footer__text_link {
       text-decoration: none; }
       .footer__text_link:focus {
-        outline: 4px outset rgba(32, 96, 246, 0.5); }
+        outline: 2px outset rgba(32, 96, 246, 0.5); }
   .footer__nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1228,7 +1246,7 @@ p {
     text-decoration: none;
     cursor: pointer; }
     .socials__link:focus {
-      outline: 4px outset rgba(32, 96, 246, 0.5); }
+      outline: 2px outset rgba(32, 96, 246, 0.5); }
 
 .navigation {
   display: -webkit-box;
@@ -1261,7 +1279,7 @@ p {
     text-decoration: none;
     color: #fff; }
     .navigation__link:focus {
-      outline: 4px outset rgba(32, 96, 246, 0.5); }
+      outline: 2px outset rgba(32, 96, 246, 0.5); }
 
 @media screen and (max-width: 1070px) {
   .footer {
