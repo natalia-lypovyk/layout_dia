@@ -48,9 +48,16 @@ p {
     -webkit-animation: appear-v 1s linear;
             animation: appear-v 1s linear; }
   .header__logo {
-    padding: 5px; }
+    padding: 5px;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s; }
     .header__logo:focus {
       outline: 4px outset rgba(32, 96, 246, 0.5); }
+    .header__logo:hover {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
   .header__hire {
     font-family: Poppins, sans-serif;
     font-size: 13px;
@@ -155,7 +162,11 @@ p {
   list-style: none;
   margin-right: 64px;
   padding: 10px 0;
-  position: relative; }
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s; }
   .nav__item:hover::before {
     content: "";
     width: 100%;
@@ -164,6 +175,9 @@ p {
     border-radius: 4px;
     position: absolute;
     bottom: 0; }
+  .nav__item:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15); }
 
 .nav__link {
   font-family: Poppins, sans-serif;
@@ -235,10 +249,10 @@ p {
     border-radius: 3px;
     -webkit-transform-origin: left center;
             transform-origin: left center;
-    -webkit-transition: opacity 0.2s, -webkit-transform 0.4s;
-    transition: opacity 0.2s, -webkit-transform 0.4s;
-    transition: transform 0.4s, opacity 0.2s;
-    transition: transform 0.4s, opacity 0.2s, -webkit-transform 0.4s; }
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.4s;
+    transition: opacity 0.3s, -webkit-transform 0.4s;
+    transition: transform 0.4s, opacity 0.3s;
+    transition: transform 0.4s, opacity 0.3s, -webkit-transform 0.4s; }
   .burger__item:not(:last-child) {
     margin-bottom: 5px; }
 
@@ -578,15 +592,15 @@ p {
     background-position: center;
     outline: none;
     border: none;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
     text-decoration: none;
     margin-right: 16px; }
     .more__button:hover {
-      -webkit-transition: -webkit-transform;
-      transition: -webkit-transform;
-      transition: transform;
-      transition: transform, -webkit-transform; }
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
   .more__title {
     position: absolute;
     left: 88px;
