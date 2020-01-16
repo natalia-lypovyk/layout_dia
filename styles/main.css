@@ -68,7 +68,11 @@ p {
     text-decoration: none;
     color: #fff;
     padding: 10px 0;
-    position: relative; }
+    position: relative;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s; }
     .header__hire::before {
       content: "";
       width: 100%;
@@ -79,6 +83,9 @@ p {
       bottom: 0; }
     .header__hire:focus {
       outline: 4px outset rgba(32, 96, 246, 0.5); }
+    .header__hire:hover {
+      -webkit-transform: scale(1.15);
+              transform: scale(1.15); }
   .header__left {
     width: 40%; }
   .header__heading {
