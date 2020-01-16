@@ -658,15 +658,16 @@ p {
     text-align: center; } }
 
 .approach {
-  margin-top: -88px;
-  position: relative;
   background-color: #2c2c2c;
   color: #fff;
   border-radius: 30px 0 0 30px;
-  width: 92%;
-  padding: 204px;
   right: 0;
-  margin-left: 8%; }
+  margin: -88px 0 0 8%; }
+  .approach__wrapper {
+    position: relative;
+    width: 90%;
+    max-width: 1280px;
+    padding: 204px; }
   .approach__block {
     width: 364px; }
   .approach__picture {
@@ -732,13 +733,14 @@ p {
   line-height: 150%; }
 
 @media screen and (max-width: 1150px) {
-  .approach {
+  .approach__wrapper {
     padding: 204px 100px 100px; } }
 
 @media screen and (max-width: 1060px) {
   .approach {
-    margin-top: 0;
-    padding: 100px; }
+    margin: 0; }
+    .approach__wrapper {
+      padding: 70px; }
     .approach__block {
       width: 100%; }
     .approach__picture {
@@ -751,12 +753,12 @@ p {
     width: 90%; } }
 
 @media screen and (max-width: 850px) {
-  .approach {
+  .approach__wrapper {
     padding: 10% 5%; }
-    .approach__heading {
-      font-size: 28px; }
-    .approach__subheading {
-      font-size: 10px; } }
+  .approach__heading {
+    font-size: 28px; }
+  .approach__subheading {
+    font-size: 10px; } }
 
 @media screen and (max-width: 700px) {
   .approach {
@@ -775,6 +777,9 @@ p {
     margin: 0;
     -ms-flex-line-pack: start;
         align-content: flex-start; } }
+
+@media screen and (min-width: 1280px) {
+  margin: 0 auto; }
 
 .testimonials {
   padding: 148px 0 168px; }
@@ -903,11 +908,6 @@ p {
     .testimonials__subheading {
       text-align: center; }
   .card {
-    -ms-flex-negative: 1;
-        flex-shrink: 1;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
     padding: 10px;
     margin: 10px; } }
 
@@ -1292,9 +1292,17 @@ p {
   .footer {
     position: relative;
     padding-top: 50px; }
+    .footer__heading {
+      text-align: center; }
+      .footer__heading_contact {
+        margin-bottom: 20px; }
+    .footer__contact:nth-of-type(2) {
+      margin-top: 20px; }
+    .footer__text {
+      margin-bottom: 20px; }
     .footer__logo {
       position: absolute;
-      bottom: 10px;
+      bottom: 20px;
       left: 50%;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
