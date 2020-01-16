@@ -108,6 +108,7 @@ p {
     -webkit-animation: appear 1s linear;
             animation: appear 1s linear; }
   .header__button {
+    display: block;
     width: 226px;
     height: 56px;
     border-radius: 8px;
@@ -904,6 +905,7 @@ p {
     margin: 0 auto 64px;
     color: #6c788b; }
   .apply__button {
+    display: block;
     width: 226px;
     height: 56px;
     border-radius: 8px;
@@ -1108,6 +1110,7 @@ p {
       font-weight: 600;
       color: rgba(255, 255, 255, 0.7); }
   .footer__button {
+    display: block;
     width: 226px;
     height: 56px;
     border-radius: 8px;
@@ -1233,8 +1236,10 @@ p {
               justify-content: center; }
     .footer__block {
       margin: 30px; }
+      .footer__block_contact {
+        text-align: center; }
     .footer__button {
-      margin: 20px 0 0; }
+      margin: 20px auto 0; }
     .footer__heading {
       font-size: 26px; }
     .footer-form__input {
@@ -1243,7 +1248,9 @@ p {
     .footer__contact {
       font-size: 10px; }
     .footer__text {
-      font-size: 18px; } }
+      font-size: 18px; }
+  .socials {
+    margin: 0 auto; } }
 
 @media screen and (max-width: 850px) {
   .footer {
