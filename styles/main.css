@@ -579,7 +579,16 @@ p {
   border-radius: 16px;
   -webkit-box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
           box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
-  position: relative; }
+  position: relative;
+  -webkit-transition: -webkit-transform 0.4s, -webkit-box-shadow 0.3s;
+  transition: -webkit-transform 0.4s, -webkit-box-shadow 0.3s;
+  transition: transform 0.4s, box-shadow 0.3s;
+  transition: transform 0.4s, box-shadow 0.3s, -webkit-transform 0.4s, -webkit-box-shadow 0.3s; }
+  .item:hover {
+    -webkit-box-shadow: 0 5px 10px #6985e0;
+            box-shadow: 0 5px 10px #6985e0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
   .item__1 {
     grid-area: card-1; }
   .item__2 {
@@ -649,7 +658,15 @@ p {
     font-weight: 600;
     font-size: 15px;
     line-height: 22px;
-    color: #334563; }
+    color: #334563;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s; }
+    .more__title:hover {
+      -webkit-transform: scale(1.15);
+              transform: scale(1.15); }
 
 @media screen and (max-width: 1060px) {
   .process {
@@ -866,7 +883,16 @@ p {
   border-radius: 16px;
   -ms-flex-preferred-size: 314px;
       flex-basis: 314px;
-  padding: 32px; }
+  padding: 32px;
+  -webkit-transition: -webkit-transform 0.4s, -webkit-box-shadow 0.4s;
+  transition: -webkit-transform 0.4s, -webkit-box-shadow 0.4s;
+  transition: transform 0.4s, box-shadow 0.4s;
+  transition: transform 0.4s, box-shadow 0.4s, -webkit-transform 0.4s, -webkit-box-shadow 0.4s; }
+  .card:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0 0 10px #6985e0;
+            box-shadow: 0 0 10px #6985e0; }
 
 .person-review__wrapper {
   position: relative;
@@ -1001,6 +1027,9 @@ p {
     transition: background-color 0.3s linear, transform 0.3s linear, -webkit-transform 0.3s linear;
     cursor: pointer;
     margin: 0 auto; }
+    .apply__button_link {
+      text-decoration: none;
+      color: #fff; }
     .apply__button:hover {
       background-color: #144ed5; }
     .apply__button:active {
@@ -1213,6 +1242,9 @@ p {
     transition: background-color 0.3s linear, transform 0.3s linear, -webkit-transform 0.3s linear;
     cursor: pointer;
     margin: 80px 0 124px; }
+    .footer__button_link {
+      text-decoration: none;
+      color: #fff; }
     .footer__button:hover {
       background-color: #144ed5; }
     .footer__button:active {
