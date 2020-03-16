@@ -134,6 +134,7 @@ p {
     transition: background-color 0.3s linear, transform 0.3s linear;
     transition: background-color 0.3s linear, transform 0.3s linear, -webkit-transform 0.3s linear;
     cursor: pointer;
+    text-decoration: none;
     -webkit-animation: appear 1s linear;
             animation: appear 1s linear; }
     .header__button:hover {
@@ -1026,10 +1027,8 @@ p {
     transition: background-color 0.3s linear, transform 0.3s linear;
     transition: background-color 0.3s linear, transform 0.3s linear, -webkit-transform 0.3s linear;
     cursor: pointer;
-    margin: 0 auto; }
-    .apply__button_link {
-      text-decoration: none;
-      color: #fff; }
+    margin: 0 auto;
+    text-decoration: none; }
     .apply__button:hover {
       background-color: #144ed5; }
     .apply__button:active {
@@ -1241,10 +1240,8 @@ p {
     transition: background-color 0.3s linear, transform 0.3s linear;
     transition: background-color 0.3s linear, transform 0.3s linear, -webkit-transform 0.3s linear;
     cursor: pointer;
-    margin: 80px 0 124px; }
-    .footer__button_link {
-      text-decoration: none;
-      color: #fff; }
+    margin: 80px 0 124px;
+    text-decoration: none; }
     .footer__button:hover {
       background-color: #144ed5; }
     .footer__button:active {
